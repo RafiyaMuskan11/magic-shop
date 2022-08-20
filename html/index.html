@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagicShop</title>
+  <script src="https://kit.fontawesome.com/4859d1b8e4.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-center">
+      <div class="hamburger">
+        <span><i class="fa-solid fa-bars ham nav-icon"></i></span>
+        <span><i class="fa-solid fa-xmark cross nav-icon"></i></span>
+      </div>
+
+      <div class="sidebar sidebarGo">
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#products">T-shirt collection</a></li>
+            <li><a href="posters.html">Accessories <span><i class="fa-solid fa-wand-magic-sparkles"></i></span></a></li>
+            <!-- <li><a href="#">Sell <span><i class="fa-solid fa-sack-dollar"></i></span></a></li> -->
+            <li><a href="contact.html">Contact us <span><i class="fa-solid fa-phone"></i></span></a></li>
+            <li><a href="login.html">Login <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    <a href="#"><img src="/images/logo.png" alt="store-logo"></a> 
+      <div class="cartbtn">
+        <span><i class="fas fa-cart-plus nav-icon"></i></span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- hero -->
+  <div class="hero">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/slider1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <a href="#des-products" class="now">Shop now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/slider3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <a href="#products" class="now"> Shop now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/slider2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </div>
+  <!-- end of hero -->
+  <!-- featured section -->
+  <!-- <section id="feature" class="section-p1">
+    <div class="fe-box">
+      <img src="/images/f1.png" alt=""> <br>
+      <h6>Free Shipping</h6>
+    </div>
+    <div class="fe-box">
+      <img src="/images/f2.png" alt=""><br>
+      <h6>Online order</h6>
+    </div>
+    <div class="fe-box">
+      <img src="/images/f3.png" alt=""><br>
+      <h6>Save money</h6>
+    </div>
+    <div class="fe-box">
+      <img src="/images/f4.png" alt=""><br>
+      <h6>Promotions</h6>
+    </div>
+    <div class="fe-box">
+      <img src="/images/f5.png" alt=""><br>
+      <h6>Happy sell</h6>
+    </div>
+    <div class="fe-box">
+      <img src="/images/f6.png" alt=""><br>
+      <h6>24/7 Support</h6>
+    </div>
+  </section> -->
+  <!-- end of featured section -->
+  <!-- design  product -->
+  <!-- category section -->
+  <section id="category">
+    <div class="amine">
+     <a href="anime.html"><h2>Anime</h2></a> 
+    </div>
+    <div class="bts"><a href="bts.html"><h2>bts army</h2></a></div>
+    <div class="marvel"><a href="marvel.html"><h2>marvel fans</h2></a></div>
+  </section>
+  <!-- end of category section -->
+
+  <!--pre-design  product -->
+  <section class="des-products" id="products">
+    <div class="section-title">
+      <h2>Featured Products</h2>
+    </div>
+    <div class="products-center">
+     <!-- single product -->
+     <article class="product">
+      <div class="img-container">
+        <img src="/images/posters/armysign.png" alt="product" class="product-img" id="bts">
+        <button class="cart-btn" data-id="27">
+          <i class="fas fa-shopping-cart"></i>
+          add to cart
+        </button>
+      </div>
+      <p>A3 Poster 300 GSM</p>
+      <h3>army sign by bts</h3>
+      <h4>₹199</h4>
+    </article>
+    <!-- end of single product -->
+     <!-- single product -->
+     <article class="product">
+      <div class="img-container">
+        <img src="/images/posters/jiminbs.png" alt="product" class="product-img">
+        <button class="cart-btn" data-id="31">
+          <i class="fas fa-shopping-cart"></i>
+          add to cart
+        </button>
+      </div>
+      <p>A3 Poster 300 GSM</p>
+      <h3>black swan - jimin</h3>
+      <h4>₹199</h4>
+    </article>
+    <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/btspaintart.png" alt="product" class="product-img" id="bts">
+          <button class="cart-btn" data-id="25">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>A3 Poster 300 GSM</p>
+        <h3>bts painting art</h3>
+        <h4>₹199</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/ironman.png" alt="product" class="product-img">
+          <button class="cart-btn" data-id="48">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>A3 Poster 300 GSM</p>
+        <h3>iron man</h3>
+        <h4>₹199</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/spiritedaway.png" alt="product" class="product-img">
+          <button class="cart-btn" data-id="15">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>A3 Poster 300 GSM</p>
+        <h3>Spirited Away - Anime Poster for Home Decor</h3>
+        <h4>₹199</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/megumi.png" alt="product" class="product-img">
+          <button class="cart-btn" data-id="18">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>A5 Poster 300 GSM</p>
+        <h3>jujutsu kaisen - megumi fushigaro</h3>
+        <h4>₹199</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/hinata.webp" alt="product" class="product-img">
+          <button class="cart-btn" data-id="3">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>mug</p>
+        <h3>Hinata shoyo</h3>
+        <h4>₹399</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/spy.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="6">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>keychain</p>
+        <h3>spyXfamily - keychain set</h3>
+        <h4>₹399</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/btsmug.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="79">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>mug</p>
+        <h3>BTS mug</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/ca.webp" alt="product" class="product-img">
+          <button class="cart-btn" data-id="52">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>Action figure</p>
+        <h3>captain america - avenger</h3>
+        <h4>₹399</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/gojo4.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="5">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>keychain</p>
+        <h3>gojo satoru - keychain</h3>
+        <h4>₹150</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/av9.jpg " alt="product" class="product-img">
+          <button class="cart-btn" data-id="72">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>mug</p>
+        <h3>marvel - mug</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/koya.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="61">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>Soft toy</p>
+        <h3>koya bt21 - soft toy</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/rj.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="62">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>soft toy</p>
+        <h3>rj bt21 - soft toy</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/tata.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="66">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>soft toy</p>
+        <h3>tata bt21 - soft toy</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/cooky.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="67">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>soft toy</p>
+        <h3>cooky bt21 - soft toy</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+      <!-- single product -->
+      <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/bt12.png" alt="product" class="product-img">
+          <button class="cart-btn" data-id="78">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>soft toy</p>
+        <h3>bt21 - soft toys</h3>
+        <h4>₹699</h4>
+      </article>
+      <!-- end of single product -->
+       <!-- single product -->
+       <article class="product">
+        <div class="img-container">
+          <img src="/images/posters/van.jpg" alt="product" class="product-img">
+          <button class="cart-btn" data-id="68">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <p>soft toy</p>
+        <h3>van bt21 - soft toy</h3>
+        <h4>₹299</h4>
+      </article>
+      <!-- end of single product -->
+
+      
+      <!-- single product -->
+      <!-- <article class="product">
+        <div class="img-container">
+          <a href="/html/single products/venom2.html"><img src="/images/venom.png" alt="product" class="product-img"></a>
+          <button class="cart-btn" data-id="1">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </div>
+        <h3>Venom</h3>
+        <h4>$10</h4>
+      </article> -->
+      <!-- end of single product -->
+
+    </div>
+
+  </section>
+  <!--  end of pre-design product -->
+
+  <!-- carts -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>Your Cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+           <span class="remove-item" data-id=${item.id}>Remove</span>
+           <i class="fa-solid fa-trash-xmark"></i>
+           <i class="fa-solid fa-trash-can-xmark"></i>
+        </div> -->
+        <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total : ₹ <span class="cart-total">0</span></h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of carts -->
+  <!-- product name -->
+  <section class="searchproduct">
+    <h1>search products</h1>
+    <div class="productnames">
+      <ul>
+        <a href="pillows.html"><li>pillows</li></a>
+        <a href="posters.html"><li>posters</li></a>
+        <a href="keychains.html"><li>keychains</li></a>
+       <a href="mugs.html"> <li>mugs</li></a>
+      </ul>
+    </div>
+  </section>
+  <!-- end of products name section -->
+  <!-- newsletter -->
+  <section id="newsletter" class="section-m1">
+    <div class="newstext">
+      <h4>Subcribe to Magic Shop</h4>
+      <p>Get updates on our latest products and <span>special offers.</span></p>
+    </div>
+    <form action="" method="get">
+    <div class="form">
+      <label for="sub"></label>
+      <input type="email" id="sub" name="sub" placeholder="Email address" required>
+      <button>Submit</button>
+    </div>
+  </form>
+  </section>
+  <!-- end of newsletter -->
+  <!-- footer -->
+  <footer>
+    <div class="footer-col">
+      <div>
+        <h3>Top Products</h3>
+        <a href="/html/anime.html"><li>Anime designs </li></a>
+        <a href="/html/marvel.html"><li>Marvel</li></a>
+       <a href="/html/bts.html"><li>bts</li></a> 
+        <li>Magicshop Gifts</li>
+      </div>
+      <div>
+        <h3>Quick Lines</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms Of Service</li>
+      </div>
+      <div>
+        <h3>Features</h3>
+        <li>Free Shipping</li>
+        <li>Happy sell</li>
+        <li>Promotions</li>
+        <li>24/7 Support</li>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <li>youtube Videos</li>
+        <li>Textbooks</li>
+        <li>Lecturers</li>
+        <li>Internet</li>
+      </div>
+
+    </div>
+    <div class="copyright">
+      <p>Copyright @2022 sAll rights reserved | This template is made by Magic Shop</p>
+      <div class="pro-links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
