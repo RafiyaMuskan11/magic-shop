@@ -31,6 +31,39 @@ const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content');
 const productsDOM = document.querySelector('.products-center');
 
+
+const loginBtn = document.querySelector('#login-btn');
+const checkoutBtn = document.querySelector('#checkout-btn');
+
+
+const user = localStorage.getItem('user');
+if(user){
+  loginBtn.innerText = 'Logout';
+  loginBtn.style.backgroundColor = '#ff0000';
+  loginBtn.style.cursor = 'pointer';
+}
+
+
+loginBtn.addEventListener('click', (e) => {
+    if(user){
+        localStorage.removeItem('user');
+        loginBtn.innerText = 'Login';
+
+        window.location.href = 'http://localhost:5500/html/login.html';
+    }
+  });
+   
+checkoutBtn.addEventListener('click', (e) => {
+    if(!user) {
+        window.location.href = 'http://localhost:5500/html/login.html';
+    }
+
+    if(user){
+        window.location.href = 'http://localhost:5500/html/checkout.html';
+    }
+  });
+
+
 // cart general info
 let cart = [];
 

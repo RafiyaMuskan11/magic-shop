@@ -27,17 +27,17 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="login.php" class="sign-in-form">
+          <form class="sign-in-form">
             <h2 class="title">Login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="email" placeholder="Email" name="email" />
+              <input type="email" placeholder="Email" name="email" id="login-email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="password" />
+              <input type="password" placeholder="Password" name="password" id="login-password"/>
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" class="btn solid" id="signin-submit-btn"/>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -54,26 +54,29 @@
               </a>
             </div>
           </form>
-          <form action="connect.php" method="post" class="sign-up-form">
+          <form  method="post" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="Name"required/>
+              <input type="text" placeholder="Username" name="Name"required id="username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" name="email" required/>
+              <input type="email" placeholder="Email" name="email" required id="email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="password"
-              required/>
+              <input type="password" placeholder="Password" name="password" id="password" required/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="number" pattern="[7-9]{2}-[0-9]{8}" minlength="10" maxlength="10" placeholder="Number" name="number" required/>
+              <input id="phone" type="tel" pattern="[7-9]{2}-[0-9]{8}" minlength="10" maxlength="10" placeholder="Number" name="number" required/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input id="address" type="text "placeholder="Address" name="address" required/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" id="signup-submit-btn"/>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
