@@ -107,8 +107,6 @@ body{
     color: whitesmoke; 
 }
 
-
-
 .hamburger {
     /* position: absolute; */
     cursor: pointer;
@@ -649,6 +647,9 @@ body{
     }
     .copyright{
         text-align: center;
+    }.copyright a {
+        list-style: none;
+        color: var(--primaryColor);
     }
     .pro-links {
         margin-top: 10px;

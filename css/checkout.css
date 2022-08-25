@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Josefin+Sans:wght@100;200;300;400;600&family=Lato:ital,wght@1,300;1,400&family=Poiret+One&display=swap');
+
+:root{
+    --primaryColor:rgb(95, 59, 107);
+    --mainWhite: white;
+    --mainBlack: black;
+    --maingrey: rgba(66, 66, 66, 0.4);
+    --mainTransition: all 0.3 linear;
+    --mainSpacing: 0.1rem;
+    --margin:2rem 0 0 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poiret One', cursive;
+}
+body{
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: 'Abel', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poiret One', cursive;
+}  
+
+h1 {
+    text-transform: capitalize;
+    color: var(--primaryColor);
+    font-weight: bolder;
+    margin: 2rem 0 5rem 2rem;
+}
+h2 {
+    text-transform: capitalize;
+    color: var(--primaryColor);
+    font-weight: bolder;
+    margin: var(--margin);
+}
+.image{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    /* margin: var(--margin); */
+}
+div{
+    margin: 1rem 2rem;
+    font-size: larger;
+}
+section textarea{
+    padding:5px;
+    font-size: large;
+}
+section textarea::placeholder{
+    font-size: 30px;
+    color: grey;
+}
+button{
+    width: 150px;
+    background-color: #5b595e;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: var(--primaryColor);
+    color: white;
+  }

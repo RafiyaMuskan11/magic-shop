@@ -31,7 +31,7 @@ router.post("/", (req, res) => {
         );
     })
     .catch((e) =>
-      res.status(400).json({ message: "Something went wwßwrong", error: e })
+      res.status(400).json({ message: "Something went wrong", error: e })
     );
 });
 

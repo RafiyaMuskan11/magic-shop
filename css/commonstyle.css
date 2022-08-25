@@ -430,6 +430,10 @@ footer p {
 .copyright{
     text-align: center;
 }
+.copyright a {
+    list-style: none;
+    color: var(--primaryColor);
+}
 .pro-links {
     margin-top: 10px;
 }

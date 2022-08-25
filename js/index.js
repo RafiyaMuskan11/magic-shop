@@ -38,8 +38,10 @@ const checkoutBtn = document.querySelector('#checkout-btn');
 
 const user = localStorage.getItem('user');
 if(user){
-  loginBtn.innerText = 'Logout';
-  loginBtn.style.backgroundColor = '#ff0000';
+  loginBtn.innerHTML= 'Logout <i class="fa-solid fa-user"></i>';
+  loginBtn.style.fontSize = '25px';
+  loginBtn.style.fontWeight = 'bold';
+  loginBtn.style.backgroundColor = 'rgb(95, 59, 107)';
   loginBtn.style.cursor = 'pointer';
 }
 
@@ -49,17 +51,17 @@ loginBtn.addEventListener('click', (e) => {
         localStorage.removeItem('user');
         loginBtn.innerText = 'Login';
 
-        window.location.href = 'http://localhost:5500/html/login.html';
+        window.location.href = 'http://127.0.0.1:5501/html/login.html';
     }
   });
    
 checkoutBtn.addEventListener('click', (e) => {
     if(!user) {
-        window.location.href = 'http://localhost:5500/html/login.html';
+        window.location.href = 'http://127.0.0.1:5501/html/login.html';
     }
 
     if(user){
-        window.location.href = 'http://localhost:5500/html/checkout.html';
+        window.location.href = 'http://127.0.0.1:5501/html/checkout.html';
     }
   });
 

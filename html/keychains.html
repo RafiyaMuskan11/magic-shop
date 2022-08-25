@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/commonstyle.css">
 </head>
 <body>
-    <!-- navbar -->
+   <!-- navbar -->
   <nav class="navbar">
     <div class="navbar-center">
       <div class="hamburger">
@@ -25,19 +25,19 @@
         <div class="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#feature">Features</a></li>
-            <li><a href="#products">T-shirt collection</a></li>
-            <li><a href="posters.html">Accessories <span><i class="fa-solid fa-wand-magic-sparkles"></i></span></a></li>
-            <!-- <li><a href="#">Sell <span><i class="fa-solid fa-sack-dollar"></i></span></a></li> -->
+            <li><a href="../html/mugs.html">Mugs</a></li>
+            <li><a href="../html/pillows.html">Pillows</a></li>
+            <li><a href="../html/posters.html">posters</a></li>
+            <li><a href="../html/actionfigues.html">Action figures</a></li>
             <li><a href="contact.html">Contact us <span><i class="fa-solid fa-phone"></i></span></a></li>
-            <li><a href="login.html">Login <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
+            <li id="login-btn"><a href="login.html">Login <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
 
           </ul>
 
         </div>
       </div>
 
-    <a href="#"><img src="/images/logo.png" alt="store-logo"></a> 
+    <a href="../html/index.html"><img src="/images/logo.png" alt="store-logo"></a> 
       <div class="cartbtn">
         <span><i class="fas fa-cart-plus nav-icon"></i></span>
         <div class="cart-items">0</div>
@@ -204,23 +204,16 @@
     <div class="cart-content">
       <!-- cart item -->
       <!-- <div class="cart-item">
-        <img src="/images/Megumi.png" alt="product">
-        <div>
-          <h4>megumi</h4>
-          <h5>$12</h5>
-          <span class="remove-item">Remove</span>
-        </div>
-        <div>
-          <i class="fas fa-chevron-up"></i>
-          <p class="item-amount">1</p>
-          <i class="fas fa-chevron-down"></i>
-        </div>
+         <span class="remove-item" data-id=${item.id}>Remove</span>
+         <i class="fa-solid fa-trash-xmark"></i>
+         <i class="fa-solid fa-trash-can-xmark"></i>
       </div> -->
       <!-- end of cart item -->
     </div>
     <div class="cart-footer">
-      <h3>your total : $ <span class="cart-total">0</span></h3>
+      <h3>your total : ₹ <span class="cart-total">0</span></h3>
       <button class="clear-cart banner-btn">clear cart</button>
+      <button class="clear-cart banner-btn" id="checkout-btn">Checkout</button>
     </div>
   </div>
 </div>
@@ -230,9 +223,9 @@
   <div class="footer-col">
     <div>
       <h3>Top Products</h3>
-      <li>Anime designs</li>
-      <li>Marvel</li>
-      <li>Friends</li>
+      <a href="../html/anime.html"><li>Anime</li></a>
+      <a href="../html/marvel.html"><li>Marvel</li></a>
+     <a href="../html/bts.html"><li>BTS</li></a> 
       <li>Magicshop Gifts</li>
     </div>
     <div>
@@ -250,20 +243,20 @@
       <li>24/7 Support</li>
     </div>
     <div>
-      <h3>Resources</h3>
-      <li>youtube Videos</li>
-      <li>Textbooks</li>
-      <li>Lecturers</li>
-      <li>Internet</li>
+      <h3>Support</h3>
+      <a href="../html/contact.html"><li>Contact Us</li></a>
+      <li>Shipping & Returns</li>
+      <li>Return Policy</li>
+      <li>Terms & Conditions</li>
     </div>
 
   </div>
   <div class="copyright">
     <p>Copyright @2022 sAll rights reserved | This template is made by Magic Shop</p>
     <div class="pro-links">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin-in"></i>
+      <a href="https://www.facebook.com/zazzle"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/zazzle/"><i class="fab fa-instagram"></i></a>
+      <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
 </footer>

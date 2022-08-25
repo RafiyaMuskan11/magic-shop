@@ -35,7 +35,7 @@ signup_submit_btn.addEventListener("click", (e) => {
         return alert(data.error.errors.reduce((acc, curr) =>  curr.message + ' ' + acc , ''))
       }
       if (data.success) {
-        // window.location.href = "http://localhost:4000/login";
+        window.location.href = "http://127.0.0.1:5501/html/login.html";
         alert(data.message);
         container.classList.remove("sign-up-mode");
       } else {
@@ -60,7 +60,7 @@ signin_submit_btn.addEventListener("click", (e) => {
     .then((data) => {
       if (data.success) {
         localStorage.setItem("user", JSON.stringify(data.user));
-        window.location.href = "http://localhost:5500/html";
+        window.location.href = "http://127.0.0.1:5501/html/index.html";
       } else {
         alert(data.message);
       }
