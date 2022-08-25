@@ -33,7 +33,7 @@ const startServer = () => {
     .authenticate()
     .then(() => {
       console.log("Database connected!");
-      app.listen(4001, () => console.log("Port 4000 is listening"));
+      app.listen(4000, () => console.log("Port 4000 is listening"));
     })
     .catch((e) => console.log(e));
 };

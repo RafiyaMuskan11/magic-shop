@@ -50,5 +50,43 @@ checkoutBtn.style.display = 'block';
 
 ordersSection.appendChild(checkoutBtn);
 
-checkoutBtn.addEventListener('click', () => {
-  window.location.href = "http://127.0.0.1:5501/html/index.html"});
+checkoutBtn.addEventListener("click", () => {
+  let user = localStorage.getItem('user');
+  
+  let productids = ''
+
+  if(user) {
+    let cart = localStorage.getItem('cart') || '[]'
+    const items = JSON.parse(cart);
+    user = JSON.parse(user)
+
+    items.forEach(it => productids+=`,${it.id}`)
+
+    console.log(productids)
+
+    fetch("http://localhost:4000/api/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userid: user.id,
+        productsids: productids
+      }),
+    })
+    .then(res => res.json())
+    .then(res => {
+      console.log("order",res)
+      alert(res.message);
+      localStorage.removeItem('cart');
+      window.location.href = "http://127.0.0.1:5501/html/index.html";
+
+    })
+    .catch(err => console.log(err))
+  }
+
+
+
+
+  // window.location.href = "http://127.0.0.1:5501/html/index.html";
+});
